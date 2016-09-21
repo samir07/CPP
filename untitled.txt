@@ -1,0 +1,31 @@
+#include <iostream>
+#include<string>
+using namespace std;
+
+class String
+{
+    string str;
+public:
+    String(){}
+    String(string s){str=s;}
+    
+    String oerator+(String s2)
+    {
+        String temp;
+        temp.str=str+s2.str;
+        return temp;
+    }
+    
+   void show()
+   {
+    cout<<endl<<str;       
+   }
+};
+int main()
+{
+   String s1("MAEER'S"),s2("MITSOM"),s3;
+   s3=s1+s2;
+   s3.show();
+   return 0;
+}
+
